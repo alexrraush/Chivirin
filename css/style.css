@@ -1,0 +1,258 @@
+/*----------------reset------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*----------------header--------------------*/
+header nav img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+/*----------------------main-------------------*/
+main{
+    background-color: #001233;
+}
+.Hero{
+    background-image: url("../img/portada.jpg");
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.Hero h2 {
+    font-size: 65px;
+    color:#f1faee;
+    display: flex;
+    justify-content: center;
+    padding-bottom:25px;
+}
+.Hero p{
+    font-size: 30px;
+    color:white;
+    font-weight: 600;
+}
+.Bucitos h3{
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 22px;
+}
+.Bucitos .CompraBuzos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    
+}
+.Productos h4{
+    font-style: italic;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.Bucitos div .Productos{
+    width: 250px;
+    height: 350px;
+    border: 2px white solid;
+    -webkit-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+-moz-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+}
+.Bucitos div img{
+    width: 100%;
+    height: 270px;
+}
+.Bucitos div a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+.MasSobreNosotros img{
+    width: 500px;
+    height: 600px;
+    margin: 40px;
+    -webkit-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+-moz-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+}
+.MasSobreNosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MasSobreNosotros h2{
+    font-weight: 600;
+    font-style:oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color:beige;
+    border: white solid;
+    display: flex;
+    justify-content: center;
+}
+.MasSobreNosotros p{
+    font-style: oblique;
+    font-weight: 600;
+    font-size:20px ;
+    color: whitesmoke;
+    list-style: armenian;
+}
+.GaleriaModelos{
+    background-color: white;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding-bottom: 60px;
+}
+.GaleriaModelos div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: black solid 1px;
+    -webkit-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+    -moz-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+    box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+}
+.img-4{
+    grid-row: span 2;
+}
+.img-5{
+    grid-row:span 2 ;
+}
+.img-6{
+    grid-row: span 2;
+}
+.GridItem{
+    position: relative;
+}
+.GridItem h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+/*-----------------------footer------------------*/
+footer{
+    background-color: grey;
+}
+footer h2{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: black;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+footer h3{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.Redes{
+    display: flex;
+    justify-content: center;
+}
+    
+
+
+
+
+
+/*---------MEDIA QUERY-----------*/
+@media screen and (max-width:948px){
+    .GaleriaModelos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 250px;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------PSEUDOCLASES-----------*/
+.Productos a:hover{
+    background-color:rgb(163, 163, 163);
+    transition: 2s;
+}
+header nav div ul li a:hover{
+    background-color:rgb(163, 163, 163);
+    transition: 1s;
+    border-radius: 10px;
+}
+header input:hover{
+    background-color:rgb(163, 163, 163);
+    transition: 2s;
+}
+header button:hover{
+    background-color: rgb(163, 163, 163);
+}
+
+
+
+.Hero p::selection{
+    background-color:#0f1b33;
+    color: aliceblue;
+}
+.Hero p::after{
+    content: "❤‍🩹";
+}

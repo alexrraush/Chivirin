@@ -13,7 +13,7 @@
 /*----------------header--------------------*/
 header nav img{
     width: 100px;
-    height: 100px;
+    height: 90px;
 }
 
 
@@ -164,6 +164,63 @@ box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
 
 
 
+/*-----contacto----*/
+.Contacto{
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+}
+.ContenedorDeContacto label{
+    color: white;
+}
+.ContenedorDeContacto h2{
+    color: #f1faee;
+}
+.ContenedorDeContacto h3{
+    color: #f1faee;
+}
+.Rellenar{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.GeneroYComentarios h2{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.Genero{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.GeneroYComentarios h3{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.Comentario{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.Ubicacion h2{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: #f1faee;
+}
+.Ubicacion{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
 
 /*-----------------------footer------------------*/
 footer{
@@ -209,18 +266,166 @@ footer h3{
     .GaleriaModelos{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-auto-rows: 250px;
+        grid-auto-rows: 150px;
         gap: 15px;
     }
 }
-
-
-
-
-
-
-
-
+@media screen and (max-width:1095px){
+    .Hero p {
+        font-size: 23px;
+    }
+    .Hero h2{
+        font-size: 40px;
+    }
+    .Bucitos h3{
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 16px;
+    }
+    .Bucitos .CompraBuzos{
+        margin: 20px;
+        
+    }
+    .Productos h4{
+        font-size: 17px;
+    }
+    .Bucitos div .Productos{
+        width: 200px;
+        height: 300px;
+        border: 2px white solid;
+    }
+    .Bucitos div img{
+        width: 100%;
+        height: 210px;
+    }
+    .Bucitos div a{
+        padding: 3px;
+    }
+    .MasSobreNosotros img{
+        width: 450px;
+        height: 550px;
+        margin: 35px;
+    }
+    .MasSobreNosotros h2{
+        font-weight: 550;
+        font-size: 20px;
+    }
+    .MasSobreNosotros p{
+        font-weight: 550;
+        font-size:10px ;
+    }
+    .GaleriaModelos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 150px;
+        gap: 15px;
+    }
+}
+@media screen and (max-width:847px){
+    .Hero p {
+        font-size: 15px;
+    }
+    .Hero h2{
+        font-size: 40px;
+    }
+    .Bucitos h3{
+        font-weight: 430;
+        font-size: 35px;
+        padding-bottom: 4px;
+    }
+    .Bucitos .CompraBuzos{
+        margin: 10px;
+        
+    }
+    .Productos h4{
+        font-size: 19px;
+    }
+    .Bucitos div .Productos{
+        width: 170px;
+        height: 270px;
+        border: 2px white solid;
+    }
+    .Bucitos div img{
+        width: 100%;
+        height: 170px;
+    }
+    .Bucitos div a{
+        padding: 3px;
+    }
+    .MasSobreNosotros img{
+        width: 420px;
+        height: 520px;
+        margin: 30px;
+    }
+    .MasSobreNosotros h2{
+        font-weight: 520;
+        font-size: 20px;
+    }
+    .MasSobreNosotros p{
+        font-weight: 520;
+        font-size:10px ;
+    }
+    .GaleriaModelos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 100px;
+        gap: 15px;
+    }
+    .GridItem h3{
+        bottom: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:619px){
+    .Hero h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:565px){
+    .Bucitos h3{
+        font-weight: 400;
+        font-size: 30px;
+        padding-bottom: 2px;
+    }
+    .Bucitos .CompraBuzos{
+        margin: 5px;
+        
+    }
+    .Productos h4{
+        font-size: 15px;
+    }
+    .Bucitos div .Productos{
+        width: 150px;
+        height: 260px;
+        border: 2px white solid;
+    }
+    .Bucitos div img{
+        width: 100%;
+        height: 150px;
+    }
+    .Bucitos div a{
+        padding: 3px;
+    }
+    .MasSobreNosotros img{
+        width: 200px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .MasSobreNosotros h2{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .MasSobreNosotros p{
+        font-weight: 520;
+        font-size:10px ;
+    }
+    .GridItem h3{
+        bottom: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+}
 
 
 

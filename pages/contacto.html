@@ -52,43 +52,51 @@
     </header>
 
     <main>
-        <section>
-            <h1>CONTACTO</h1>
-        </section>
-        <section>
-            <label for="nombre">nombre</label>
-            <input type="text" name="nombre" id="nombre">
-        </section>
-        <section>
-            <label for="apellido">apellido</label>
-            <input type="text" name="apellido" id="apellido">
-        </section>
-        <section>
-            <label for="password">contraseña</label>
-            <input type="password" name="password" id="password">
-        </section>
-        <section>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-        </section>
-        <section>
-            <h2>GENERO</h2>
-            <section>
-                <label for="masculino">MASCULINO</label>
-                <input type="radio" name="genero">
-                <label for="femenino">FEMENINO</label>
-                <input type="radio" name="genero">
-                <label for="otro">OTRO</label>
-                <input type="radio" name="genero">
+        <div class="ContenedorDeContacto">
+            <section class="Contacto">
+                <h1>REGISTRATE!!</h1>
             </section>
-            <section>
-                <h3>ENVIANOS UN COMENTARIO!!</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="Rellenar">
                 <section>
-                    <input type="submit">
-                    <input type="reset">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" name="nombre" id="nombre">
                 </section>
-            </section>
+                <section>
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" name="apellido" id="apellido">
+                </section>
+                <section>
+                    <label for="password">CONTRASEÑA</label>
+                    <input type="password" name="password" id="password">
+                </section>
+                <section>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </section>
+            </div>
+            <section class="GeneroYComentarios">
+                <h2>GENERO</h2>
+                <section class="Genero">
+                    <label for="masculino">MASCULINO</label>
+                    <input type="radio" name="genero">
+                    <label for="femenino">FEMENINO</label>
+                    <input type="radio" name="genero">
+                    <label for="otro">OTRO</label>
+                    <input type="radio" name="genero">
+                </section>
+                <section class="Comentario">
+                    <h3>ENVIANOS UN COMENTARIO!!</h3>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <section>
+                        <input type="submit">
+                        <input type="reset">
+                    </section>
+                </section>
+        </div>
+        <section class="Ubicacion">
+            <h2>ENCONTRANOS ACA</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13535.083997498417!2d-60.59944967716119!3d-31.994222785643494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5cb5211116461%3A0x23b59e20db27041a!2sVilla%20Valle%20Mar%C3%ADa%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1683412923502!5m2!1ses!2sar" width="400" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
 
     </main>

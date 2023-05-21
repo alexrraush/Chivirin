@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.container-fluid img {
+  width: 100px;
+  height: 90px; }
+
+.nav-link:hover {
+  background-color: #a3a3a3;
+  transition: 0,5s;
+  border-radius: 10px; }
+
+.form-control:hover {
+  background-color: #a3a3a3;
+  transition: 2s; }
+
+.btn:hover {
+  background-color: #a3a3a3; }
+
+main {
+  background-color: #001233; }
+  main .Hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.507)), url("../img/portada.jpg");
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .Hero h2 {
+      font-size: 65px;
+      color: #f1faee;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px; }
+    main .Hero p {
+      font-size: 30px;
+      color: white;
+      font-weight: 600; }
+  main .Bucitos h3 {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 22px; }
+  main .Bucitos .CompraBuzos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px; }
+    main .Bucitos .CompraBuzos .Productos {
+      width: 250px;
+      height: 350px;
+      border: 2px white solid;
+      -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+      box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+      main .Bucitos .CompraBuzos .Productos img {
+        width: 100%;
+        height: 270px; }
+      main .Bucitos .CompraBuzos .Productos h4 {
+        font-style: italic;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        color: aliceblue; }
+      main .Bucitos .CompraBuzos .Productos a {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 3px;
+        display: flex;
+        justify-content: center; }
+        main .Bucitos .CompraBuzos .Productos a:hover {
+          background-color: #a3a3a3;
+          transition: 2s; }
+  main .MasSobreNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .MasSobreNosotros img {
+      width: 500px;
+      height: 600px;
+      margin: 40px;
+      -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+      box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+    main .MasSobreNosotros div h2 {
+      font-weight: 600;
+      font-style: oblique;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 30px;
+      color: beige;
+      border: white solid;
+      display: flex;
+      justify-content: center; }
+    main .MasSobreNosotros div p {
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 20px;
+      color: whitesmoke;
+      list-style: armenian; }
+  main .GaleriaModelos {
+    background-color: white;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding-bottom: 60px; }
+    main .GaleriaModelos .GridItem {
+      position: relative; }
+      main .GaleriaModelos .GridItem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: black solid 1px;
+        -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+        box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+      main .GaleriaModelos .GridItem h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font-size: 30px; }
+    main .GaleriaModelos .img-4 {
+      grid-row: span 2; }
+    main .GaleriaModelos .img-5 {
+      grid-row: span 2; }
+    main .GaleriaModelos .img-6 {
+      grid-row: span 2; }
+  main .Contacto {
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px; }
+  main .ContenedorDeContacto label {
+    color: white; }
+  main .ContenedorDeContacto h2 {
+    color: #f1faee; }
+  main .ContenedorDeContacto h3 {
+    color: #f1faee; }
+  main .ContenedorDeContacto .Rellenar {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px; }
+  main .ContenedorDeContacto .GeneroYComentarios h2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.527); }
+  main .ContenedorDeContacto .GeneroYComentarios .Genero {
+    text-align: center;
+    padding-bottom: 20px; }
+  main .ContenedorDeContacto .GeneroYComentarios .Comentario {
+    text-align: center;
+    padding-bottom: 50px; }
+    main .ContenedorDeContacto .GeneroYComentarios .Comentario h3 {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.527); }
+  main .TituloPrincipal h1 {
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px; }
+  main .NoDeliveri {
+    text-align: center; }
+    main .NoDeliveri p {
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 20px;
+      color: whitesmoke;
+      list-style: armenian;
+      text-align: center; }
+  main .Modelos h1 {
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px; }
+  main .Clientes .ContenedorCliente {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .Clientes .ContenedorCliente img {
+      width: 500px;
+      height: 600px;
+      margin: 40px;
+      -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+      box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+    main .Clientes .ContenedorCliente p {
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 20px;
+      color: whitesmoke;
+      list-style: armenian; }
+  main .AcercaDe h1 {
+    color: #f1faee;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px; }
+  main .Ubicacion {
+    text-align: center;
+    padding-bottom: 20px; }
+    main .Ubicacion h2 {
+      display: flex;
+      justify-content: center;
+      color: #f1faee; }
+    main .Ubicacion p {
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 20px;
+      color: whitesmoke;
+      list-style: armenian;
+      margin-top: 10px;
+      text-align: center; }
+
+footer {
+  background-color: grey; }
+  footer h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: black; }
+  footer .Redes {
+    display: flex;
+    justify-content: center; }
+  footer section p {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px; }
+  footer section div h3 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px; }
+
+@media screen and (max-width: 948px) {
+  .GaleriaModelos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 15px; } }
+
+@media screen and (max-width: 1095px) {
+  main .Hero p {
+    font-size: 23px; }
+  main .Hero h2 {
+    font-size: 40px; }
+  main .Bucitos .CompraBuzos {
+    margin: 20px; }
+    main .Bucitos .CompraBuzos .Productos {
+      width: 200px;
+      height: 300px;
+      border: 2px white solid; }
+      main .Bucitos .CompraBuzos .Productos img {
+        width: 100%;
+        height: 210px; }
+      main .Bucitos .CompraBuzos .Productos h4 {
+        font-size: 17px; }
+  main .MasSobreNosotros img {
+    width: 450px;
+    height: 550px;
+    margin: 35px; }
+  main .MasSobreNosotros div h2 {
+    font-weight: 550;
+    font-size: 20px; }
+  main .MasSobreNosotros div p {
+    font-weight: 550;
+    font-size: 10px; }
+  main .GaleriaModelos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 15px; } }
+
+@media screen and (max-width: 847px) {
+  main .Hero p {
+    font-size: 15px; }
+  main .Bucitos .CompraBuzos {
+    margin: 10px; }
+    main .Bucitos .CompraBuzos .Productos {
+      width: 170px;
+      height: 270px;
+      border: 2px white solid; }
+      main .Bucitos .CompraBuzos .Productos img {
+        width: 100%;
+        height: 170px; }
+      main .Bucitos .CompraBuzos .Productos h4 {
+        font-size: 17px; }
+  main .MasSobreNosotros img {
+    width: 420px;
+    height: 520px;
+    margin: 30px; }
+  main .MasSobreNosotros div h2 {
+    font-weight: 520;
+    font-size: 20px; }
+  main .MasSobreNosotros div p {
+    font-weight: 520;
+    font-size: 10px; }
+  main .GaleriaModelos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    gap: 15px; }
+  main .GridItem h3 {
+    bottom: 0;
+    width: 100%;
+    font-size: 20px; }
+  main .Clientes .ContenedorCliente {
+    display: flex;
+    flex-wrap: wrap; }
+    main .Clientes .ContenedorCliente img {
+      width: 300px;
+      height: 400px; }
+    main .Clientes .ContenedorCliente p {
+      font-size: 15px;
+      text-align: center; } }
+
+@media screen and (max-width: 717px) {
+  main .Bucitos .CompraBuzos {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap; }
+    main .Bucitos .CompraBuzos .Productos {
+      width: 150px;
+      height: 260px;
+      border: 2px white solid; }
+      main .Bucitos .CompraBuzos .Productos img {
+        width: 100%;
+        height: 150px; }
+      main .Bucitos .CompraBuzos .Productos h4 {
+        font-size: 15px; }
+  main .MasSobreNosotros img {
+    width: 200px;
+    height: 300px;
+    margin-top: 40px; }
+  main .MasSobreNosotros div h2 {
+    font-weight: 400;
+    font-size: 12px; }
+  main .MasSobreNosotros div p {
+    font-weight: 520;
+    font-size: 10px; }
+  main .GaleriaModelos .GridItem h3 {
+    bottom: 0;
+    width: 100%;
+    font-size: 15px; } }
+
+@media screen and (max-width: 619px) {
+  main .Hero h2 {
+    font-size: 30px; } }

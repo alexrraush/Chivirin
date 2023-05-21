@@ -1,0 +1,24 @@
+.container-fluid{
+    img{
+        width: 100px;
+        height: 90px;
+    }
+}
+.nav-link{
+    &:hover{
+        background-color:rgb(163, 163, 163);
+        transition: 0,5s;
+        border-radius: 10px;
+    }
+}
+.form-control{
+    &:hover{
+        background-color:rgb(163, 163, 163);
+        transition: 2s;
+    }
+}
+.btn{
+    &:hover{
+        background-color: rgb(163, 163, 163);
+    }
+}

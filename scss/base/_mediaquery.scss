@@ -1,0 +1,170 @@
+@media screen and (max-width:948px){
+    .GaleriaModelos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 150px;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:1095px){
+    main .Hero p{
+        font-size: 23px;
+    }
+    main .Hero h2{
+        font-size: 40px;
+    }
+    main .Bucitos{
+        .CompraBuzos{
+            margin: 20px;
+            .Productos{
+                width: 200px;
+                height: 300px;
+                border: 2px white solid;
+                img{
+                    width: 100%;
+                    height: 210px; 
+                }
+                h4{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    main .MasSobreNosotros img{
+        width: 450px;
+        height: 550px;
+        margin: 35px;
+    }
+    main .MasSobreNosotros div{
+        h2{
+            font-weight: 550;
+            font-size: 20px;
+        }
+        p{
+            font-weight: 550;
+            font-size:10px ;
+        }
+    }
+    main .GaleriaModelos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 150px;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:847px){
+    main .Hero p{
+        font-size: 15px;
+    }
+    main .Bucitos{
+        .CompraBuzos{
+            margin: 10px;
+            .Productos{
+                width: 170px;
+                height: 270px;
+                border: 2px white solid;
+                img{
+                    width: 100%;
+                    height: 170px; 
+                }
+                h4{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    main .MasSobreNosotros img{
+        width: 420px;
+        height: 520px;
+        margin: 30px;
+    }
+    main .MasSobreNosotros div{
+        h2{
+            font-weight: 520;
+            font-size: 20px;
+        }
+        p{
+            font-weight: 520;
+            font-size:10px ;
+        }
+    }
+    main .GaleriaModelos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 100px;
+        gap: 15px;
+    }
+    main .GridItem h3{
+        bottom: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+    main .Clientes{
+        .ContenedorCliente{
+            display: flex;
+            flex-wrap: wrap;
+            img{
+                width: 300px;
+                height: 400px;
+            }
+            p{
+                font-size:15px ;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:717px){
+    main .Bucitos{
+        .CompraBuzos{
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            .Productos{
+                width: 150px;
+                height: 260px;
+                border: 2px white solid;
+                img{
+                    width: 100%;
+                    height: 150px; 
+                }
+                h4{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    main .MasSobreNosotros img{
+        width: 200px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    main .MasSobreNosotros div{
+        h2{
+            font-weight: 400;
+            font-size: 12px;
+        }
+        p{
+            font-weight: 520;
+            font-size:10px ;
+        }
+    }
+    main .GaleriaModelos{
+        .GridItem{
+            h3{
+                bottom: 0;
+                width: 100%;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:619px){
+    main .Hero h2{
+        font-size: 30px;
+    }
+}

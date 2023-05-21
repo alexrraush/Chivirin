@@ -1,0 +1,291 @@
+main{
+    background-color: #001233;
+    .Hero{
+        background:linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.507)), url("../img/portada.jpg");
+        width: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 65px;
+            color:#f1faee;
+            display: flex;
+            justify-content: center;
+            padding-bottom:25px;
+        }
+        p{
+            font-size: 30px;
+            color:white;
+            font-weight: 600;
+        }
+    }
+    .Bucitos{
+        h3{
+            font-style: italic;
+            font-weight: 800;
+            font-size: 30px;
+            color: #f1faee;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding-bottom: 22px;
+        }
+        .CompraBuzos{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 30px;
+            .Productos{
+                width: 250px;
+                height: 350px;
+                border: 2px white solid;
+                -webkit-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+                -moz-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+                box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+                img{
+                    width: 100%;
+                    height: 270px;
+                }
+                h4{
+                    font-style: italic;
+                    font-size: 25px;
+                    display: flex;
+                    justify-content: center;
+                    color: aliceblue;
+                }
+                a{
+                    background-color: black;
+                    color: white;
+                    text-decoration: none;
+                    padding: 3px;
+                    display: flex;
+                    justify-content: center;
+                    &:hover{
+                        background-color:rgb(163, 163, 163);
+                        transition: 2s; 
+                    }
+                }
+            }
+        }
+    }
+    .MasSobreNosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 500px;
+            height: 600px;
+            margin: 40px;
+            -webkit-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+            -moz-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+            box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+        }
+        div{
+            h2{
+                font-weight: 600;
+                font-style:oblique;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 30px;
+                color:beige;
+                border: white solid;
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                font-style: oblique;
+                font-weight: 600;
+                font-size:20px ;
+                color: whitesmoke;
+                list-style: armenian;
+            }
+        }
+    }
+    .GaleriaModelos{
+        background-color: white;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 250px;
+        gap: 15px;
+        padding-bottom: 60px;
+        .GridItem{
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: black solid 1px;
+                -webkit-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+                -moz-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+                box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+            }
+            h3{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        .img-4{
+            grid-row: span 2;
+        }
+        .img-5{
+            grid-row:span 2 ;
+        }
+        .img-6{
+            grid-row: span 2;
+        }
+    }
+
+
+//*----contacto-----*//
+
+    .Contacto{
+        color: #f1faee;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding-bottom: 5px;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .ContenedorDeContacto{
+        label{
+            color: white;
+        }
+        h2{
+            color: #f1faee;
+        }
+        h3{
+            color: #f1faee;
+        }
+        .Rellenar{
+            text-align: center;
+            margin-top: 10px;
+            padding-bottom: 20px;
+        }
+        .GeneroYComentarios{
+            h2{
+                display: flex;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.527);
+            }
+            .Genero{
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            .Comentario{
+                text-align: center;
+                padding-bottom: 50px;
+                h3{
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgba(0, 0, 0, 0.527);
+                }
+            }
+        }
+    }
+
+//*-----servicios-----*//
+
+    .TituloPrincipal{
+        h1{
+            color: #f1faee;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding-bottom: 5px;
+            font-style: italic;
+            font-weight: 800;
+            font-size: 30px;
+        }
+    }
+    .NoDeliveri{
+        text-align: center;
+        p{
+            font-style: oblique;
+            font-weight: 600;
+            font-size:20px ;
+            color: whitesmoke;
+            list-style: armenian;
+            text-align: center;
+        }
+    }
+
+//*-----productos-----*//
+
+    .Modelos{
+        h1{
+            color: #f1faee;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding-bottom: 5px;
+            font-style: italic;
+            font-weight: 800;
+            font-size: 30px;
+        }
+    }
+    .Clientes{
+        .ContenedorCliente{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 500px;
+                height: 600px;
+                margin: 40px;
+                -webkit-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+                -moz-box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+                box-shadow: 9px 7px 7px 3px rgba(0,0,0,0.67);
+            }
+            p{
+                font-style: oblique;
+                font-weight: 600;
+                font-size:20px ;
+                color: whitesmoke;
+                list-style: armenian;
+            }
+        }
+    }
+
+//*----acerca de nosotros-----*//
+
+    .AcercaDe{
+        h1{
+            color: #f1faee;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding-bottom: 5px;
+            font-style: italic;
+            font-weight: 800;
+            font-size: 30px;
+        }
+    }
+    .Ubicacion{
+        text-align: center;
+        padding-bottom: 20px;
+        h2{
+            display: flex;
+            justify-content: center;
+            color: #f1faee;
+        }
+        p{
+            font-style: oblique;
+            font-weight: 600;
+            font-size:20px ;
+            color: whitesmoke;
+            list-style: armenian;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+}

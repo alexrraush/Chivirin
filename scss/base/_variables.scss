@@ -1,0 +1,25 @@
+//*VARIABLES
+$color-principal:#001233;
+$color-secundario:#f1faee;
+
+//*LISTAS
+$colores:
+white,
+black,
+whitesmoke,
+beige,
+aliceblue;
+
+//*EXTENDS
+%Flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//*MIXINS
+@mixin flex($flex, $justify, $align){
+    display:$flex ;
+    justify-content:$justify ;
+    align-items:$align ;
+}

@@ -7,11 +7,10 @@ footer{
         display: flex;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.568);
-        color: black;
+        color:nth($colores, 2);
     }
     .Redes{
-        display: flex;
-        justify-content: center;
+        @include flex (flex, center, center);
     }
     section{
         p{

@@ -4,6 +4,11 @@
   padding: 0%;
   box-sizing: border-box; }
 
+main .Hero, main .Hero h1, main .Bucitos h3, main .Bucitos .CompraBuzos .Productos h4, main .Bucitos .CompraBuzos .Productos a, main .MasSobreNosotros, main .MasSobreNosotros div h2, main .Contacto, main .ContenedorDeContacto .GeneroYComentarios h2, main .ContenedorDeContacto .GeneroYComentarios .Comentario h3, main .Clientes .ContenedorCliente, main .AcercaDe h1, main .Ubicacion h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .container-fluid img {
   width: 100px;
   height: 90px; }
@@ -29,16 +34,20 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    main .Hero h2 {
+    flex-direction: column; }
+    main .Hero h1 {
       font-size: 65px;
       color: #f1faee;
-      display: flex;
-      justify-content: center;
-      padding-bottom: 25px; }
+      padding-bottom: 25px;
+      animation: animacionTitulo 2s ease-in-out; }
+
+@keyframes animacionTitulo {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
     main .Hero p {
       font-size: 30px;
       color: white;
@@ -48,8 +57,6 @@ main {
     font-weight: 800;
     font-size: 30px;
     color: #f1faee;
-    display: flex;
-    justify-content: center;
     background-color: black;
     padding-bottom: 22px; }
   main .Bucitos .CompraBuzos {
@@ -69,45 +76,34 @@ main {
       main .Bucitos .CompraBuzos .Productos h4 {
         font-style: italic;
         font-size: 25px;
-        display: flex;
-        justify-content: center;
         color: aliceblue; }
       main .Bucitos .CompraBuzos .Productos a {
         background-color: black;
         color: white;
         text-decoration: none;
-        padding: 3px;
-        display: flex;
-        justify-content: center; }
+        padding: 3px; }
         main .Bucitos .CompraBuzos .Productos a:hover {
           background-color: #a3a3a3;
           transition: 2s; }
-  main .MasSobreNosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    main .MasSobreNosotros img {
-      width: 500px;
-      height: 600px;
-      margin: 40px;
-      -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
-      -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
-      box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
-    main .MasSobreNosotros div h2 {
-      font-weight: 600;
-      font-style: oblique;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 30px;
-      color: beige;
-      border: white solid;
-      display: flex;
-      justify-content: center; }
-    main .MasSobreNosotros div p {
-      font-style: oblique;
-      font-weight: 600;
-      font-size: 20px;
-      color: whitesmoke;
-      list-style: armenian; }
+  main .MasSobreNosotros img {
+    width: 500px;
+    height: 600px;
+    margin: 40px;
+    -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+    box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+  main .MasSobreNosotros div h2 {
+    font-weight: 600;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: beige;
+    border: white solid; }
+  main .MasSobreNosotros div p {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 20px;
+    color: whitesmoke; }
   main .GaleriaModelos {
     background-color: white;
     margin-top: 100px;
@@ -141,8 +137,6 @@ main {
       grid-row: span 2; }
   main .Contacto {
     color: #f1faee;
-    display: flex;
-    justify-content: center;
     background-color: black;
     padding-bottom: 5px;
     font-style: italic;
@@ -159,8 +153,6 @@ main {
     margin-top: 10px;
     padding-bottom: 20px; }
   main .ContenedorDeContacto .GeneroYComentarios h2 {
-    display: flex;
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0.527); }
   main .ContenedorDeContacto .GeneroYComentarios .Genero {
     text-align: center;
@@ -169,13 +161,12 @@ main {
     text-align: center;
     padding-bottom: 50px; }
     main .ContenedorDeContacto .GeneroYComentarios .Comentario h3 {
-      display: flex;
-      justify-content: center;
       background-color: rgba(0, 0, 0, 0.527); }
   main .TituloPrincipal h1 {
     color: #f1faee;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     padding-bottom: 5px;
     font-style: italic;
@@ -194,32 +185,27 @@ main {
     color: #f1faee;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     padding-bottom: 5px;
     font-style: italic;
     font-weight: 800;
     font-size: 30px; }
-  main .Clientes .ContenedorCliente {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    main .Clientes .ContenedorCliente img {
-      width: 500px;
-      height: 600px;
-      margin: 40px;
-      -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
-      -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
-      box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
-    main .Clientes .ContenedorCliente p {
-      font-style: oblique;
-      font-weight: 600;
-      font-size: 20px;
-      color: whitesmoke;
-      list-style: armenian; }
+  main .Clientes .ContenedorCliente img {
+    width: 500px;
+    height: 600px;
+    margin: 40px;
+    -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+    box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+  main .Clientes .ContenedorCliente p {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 20px;
+    color: whitesmoke;
+    list-style: armenian; }
   main .AcercaDe h1 {
     color: #f1faee;
-    display: flex;
-    justify-content: center;
     background-color: black;
     padding-bottom: 5px;
     font-style: italic;
@@ -229,8 +215,6 @@ main {
     text-align: center;
     padding-bottom: 20px; }
     main .Ubicacion h2 {
-      display: flex;
-      justify-content: center;
       color: #f1faee; }
     main .Ubicacion p {
       font-style: oblique;
@@ -253,7 +237,8 @@ footer {
     color: black; }
   footer .Redes {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   footer section p {
     display: flex;
     justify-content: center;
@@ -278,7 +263,7 @@ footer {
 @media screen and (max-width: 1095px) {
   main .Hero p {
     font-size: 23px; }
-  main .Hero h2 {
+  main .Hero h1 {
     font-size: 40px; }
   main .Bucitos .CompraBuzos {
     margin: 20px; }
@@ -380,5 +365,5 @@ footer {
     font-size: 15px; } }
 
 @media screen and (max-width: 619px) {
-  main .Hero h2 {
+  main .Hero h1 {
     font-size: 30px; } }

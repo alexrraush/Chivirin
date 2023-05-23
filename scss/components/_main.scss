@@ -1,5 +1,5 @@
 main{
-    background-color: #001233;
+    background-color:$color-principal;
     .Hero{
         background:linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.507)), url("../img/portada.jpg");
         width: 100%;
@@ -7,20 +7,23 @@ main{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h2{
+        @extend %Flex;
+        h1{
             font-size: 65px;
-            color:#f1faee;
-            display: flex;
-            justify-content: center;
+            color:$color-secundario;
+            @extend %Flex;
             padding-bottom:25px;
+            animation: animacionTitulo 2s ease-in-out;
+        }
+        @keyframes animacionTitulo {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
         p{
             font-size: 30px;
-            color:white;
+            color:nth($colores, 1);
             font-weight: 600;
         }
     }
@@ -29,10 +32,9 @@ main{
             font-style: italic;
             font-weight: 800;
             font-size: 30px;
-            color: #f1faee;
-            display: flex;
-            justify-content: center;
-            background-color: black;
+            color:$color-secundario;
+            @extend %Flex;
+            background-color:nth($colores, 2);
             padding-bottom: 22px;
         }
         .CompraBuzos{
@@ -53,17 +55,15 @@ main{
                 h4{
                     font-style: italic;
                     font-size: 25px;
-                    display: flex;
-                    justify-content: center;
-                    color: aliceblue;
+                    @extend %Flex;
+                    color:nth($colores, 5);
                 }
                 a{
-                    background-color: black;
-                    color: white;
+                    background-color: nth($colores, 2);
+                    color: nth($colores, 1);
                     text-decoration: none;
                     padding: 3px;
-                    display: flex;
-                    justify-content: center;
+                    @extend %Flex;
                     &:hover{
                         background-color:rgb(163, 163, 163);
                         transition: 2s; 
@@ -73,9 +73,7 @@ main{
         }
     }
     .MasSobreNosotros{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %Flex;
         img{
             width: 500px;
             height: 600px;
@@ -90,22 +88,20 @@ main{
                 font-style:oblique;
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 30px;
-                color:beige;
+                color:nth($colores, 4);
                 border: white solid;
-                display: flex;
-                justify-content: center;
+                @extend %Flex;
             }
             p{
                 font-style: oblique;
                 font-weight: 600;
                 font-size:20px ;
-                color: whitesmoke;
-                list-style: armenian;
+                color:nth($colores, 3);
             }
         }
     }
     .GaleriaModelos{
-        background-color: white;
+        background-color: nth($colores, 1);
         margin-top: 100px;
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -147,10 +143,9 @@ main{
 //*----contacto-----*//
 
     .Contacto{
-        color: #f1faee;
-        display: flex;
-        justify-content: center;
-        background-color: black;
+        color:$color-secundario;
+        @extend %Flex;
+        background-color: nth($colores, 2);
         padding-bottom: 5px;
         font-style: italic;
         font-weight: 800;
@@ -158,13 +153,13 @@ main{
     }
     .ContenedorDeContacto{
         label{
-            color: white;
+            color: nth($colores, 1);
         }
         h2{
-            color: #f1faee;
+            color: $color-secundario;
         }
         h3{
-            color: #f1faee;
+            color: $color-secundario;
         }
         .Rellenar{
             text-align: center;
@@ -173,8 +168,7 @@ main{
         }
         .GeneroYComentarios{
             h2{
-                display: flex;
-                justify-content: center;
+                @extend %Flex;
                 background-color: rgba(0, 0, 0, 0.527);
             }
             .Genero{
@@ -185,8 +179,7 @@ main{
                 text-align: center;
                 padding-bottom: 50px;
                 h3{
-                    display: flex;
-                    justify-content: center;
+                    @extend %Flex;
                     background-color: rgba(0, 0, 0, 0.527);
                 }
             }
@@ -197,10 +190,9 @@ main{
 
     .TituloPrincipal{
         h1{
-            color: #f1faee;
-            display: flex;
-            justify-content: center;
-            background-color: black;
+            color: $color-secundario;
+            @include flex (flex, center, center);
+            background-color: nth($colores, 2);
             padding-bottom: 5px;
             font-style: italic;
             font-weight: 800;
@@ -213,7 +205,7 @@ main{
             font-style: oblique;
             font-weight: 600;
             font-size:20px ;
-            color: whitesmoke;
+            color: nth($colores, 3);
             list-style: armenian;
             text-align: center;
         }
@@ -223,10 +215,9 @@ main{
 
     .Modelos{
         h1{
-            color: #f1faee;
-            display: flex;
-            justify-content: center;
-            background-color: black;
+            color: $color-secundario;
+            @include flex (flex, center, center);
+            background-color: nth($colores, 2);
             padding-bottom: 5px;
             font-style: italic;
             font-weight: 800;
@@ -235,9 +226,7 @@ main{
     }
     .Clientes{
         .ContenedorCliente{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %Flex;
             img{
                 width: 500px;
                 height: 600px;
@@ -250,7 +239,7 @@ main{
                 font-style: oblique;
                 font-weight: 600;
                 font-size:20px ;
-                color: whitesmoke;
+                color: nth($colores, 3);
                 list-style: armenian;
             }
         }
@@ -260,10 +249,9 @@ main{
 
     .AcercaDe{
         h1{
-            color: #f1faee;
-            display: flex;
-            justify-content: center;
-            background-color: black;
+            color: $color-secundario;
+            @extend %Flex;
+            background-color: nth($colores, 2);
             padding-bottom: 5px;
             font-style: italic;
             font-weight: 800;
@@ -274,15 +262,14 @@ main{
         text-align: center;
         padding-bottom: 20px;
         h2{
-            display: flex;
-            justify-content: center;
-            color: #f1faee;
+            @extend %Flex;
+            color: $color-secundario;
         }
         p{
             font-style: oblique;
             font-weight: 600;
             font-size:20px ;
-            color: whitesmoke;
+            color: nth($colores, 3);
             list-style: armenian;
             margin-top: 10px;
             text-align: center;

@@ -19,8 +19,8 @@
         <!--* PROTOCOLO OPEN GRAPH-->
         <meta property="og:type" content="web site">
         <meta property="og:title" content="Chivirin | Tienda de buzos y ropa oversize">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="">
+        <meta property="og:url" content="https://chivirin.netlify.app/">
+        <meta property="og:image" content="https://chivirin.netlify.app/img/logo.png">
         <meta property="og:description" content="Bienvenido a nuestra tienda de ropa oversize, donde la comodidad y el estilo se unen para crear un look único y moderno. Aquí encontrarás una amplia selección de prendas de vestir diseñadas especialmente para aquellos que buscan lucir a la moda sin sacrificar la comodidad.
         Nuestro catálogo ofrece una variedad de opciones, desde camisetas y sudaderas hasta pantalones y vestidos, todos ellos con cortes generosos y holgados que realzan la figura de manera relajada y chic. Trabajamos con tejidos de alta calidad que brindan suavidad al tacto y permiten una gran libertad de movimiento.
         Nuestros colores son vibrantes y versátiles, lo que te permite crear múltiples combinaciones y expresar tu estilo personal. Además, nuestras prendas oversize se adaptan a todo tipo de cuerpo, resaltando las formas de manera favorecedora.
@@ -66,53 +66,32 @@
     </header>
 
     <main>
-        <div class="ContenedorDeContacto">
-            <section class="Contacto">
-                <h1>REGISTRATE!!</h1>
-            </section>
-            <div class="Rellenar">
-                <section>
-                    <label for="nombre">NOMBRE</label>
-                    <input type="text" name="nombre" id="nombre">
-                </section>
-                <section>
-                    <label for="apellido">APELLIDO</label>
-                    <input type="text" name="apellido" id="apellido">
-                </section>
-                <section>
-                    <label for="password">CONTRASEÑA</label>
-                    <input type="password" name="password" id="password">
-                </section>
-                <section>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </section>
-            </div>
-            <section class="GeneroYComentarios">
-                <h2>GENERO</h2>
-                <section class="Genero">
-                    <label for="masculino">MASCULINO</label>
-                    <input type="radio" name="genero">
-                    <label for="femenino">FEMENINO</label>
-                    <input type="radio" name="genero">
-                    <label for="otro">OTRO</label>
-                    <input type="radio" name="genero">
-                </section>
-                <section class="Comentario">
-                    <h3>ENVIANOS UN COMENTARIO!!</h3>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <section>
-                        <input type="submit">
-                        <input type="reset">
-                    </section>
-                </section>
-        </div>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label>Género:</label>
+            <input type="radio" id="genero-masculino" name="genero" value="masculino">
+            <label for="genero-masculino">Masculino</label>
+            <input type="radio" id="genero-femenino" name="genero" value="femenino">
+            <label for="genero-femenino">Femenino</label>
+            <input type="radio" id="genero-otro" name="genero" value="otro">
+            <label for="genero-otro">Otro</label>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+            <input type="submit" value="Enviar">
+            </form>
 
 
     </main>
     <footer>
         <h2>REDES</h2>
-        <div class="Redes">
+        <div class="redes">
             <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="icono de instagram"></a>
             <a href="https://www.whatsapp.com/"><img src="../img/whatsapp.png" alt="icono de whatsApp"></a>
         </div>

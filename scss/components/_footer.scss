@@ -9,7 +9,7 @@ footer{
         background-color: rgba(0, 0, 0, 0.568);
         color:nth($colores, 2);
     }
-    .Redes{
+    .redes{
         @include flex (flex, center, center);
     }
     section{

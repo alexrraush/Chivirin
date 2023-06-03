@@ -4,7 +4,7 @@
   padding: 0%;
   box-sizing: border-box; }
 
-main .Hero, main .Hero h1, main .Bucitos h3, main .Bucitos .CompraBuzos .Productos h4, main .Bucitos .CompraBuzos .Productos a, main .MasSobreNosotros, main .MasSobreNosotros div h2, main .Contacto, main .ContenedorDeContacto .GeneroYComentarios h2, main .ContenedorDeContacto .GeneroYComentarios .Comentario h3, main .Clientes .ContenedorCliente, main .AcercaDe h1, main .Ubicacion h2 {
+main .hero, main .hero h1, main .bucitos h3, main .bucitos .compra-buzos .productos h4, main .bucitos .compra-buzos .productos a, main .mas-sobre-nosotros, main .mas-sobre-nosotros div h2, main .clientes .contenedor-cliente, main .acerca-de h1, main .ubicacion h2 {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -26,8 +26,9 @@ main .Hero, main .Hero h1, main .Bucitos h3, main .Bucitos .CompraBuzos .Product
   background-color: #a3a3a3; }
 
 main {
-  background-color: #001233; }
-  main .Hero {
+  background-color: #001233;
+  /* Estilos para los radio buttons */ }
+  main .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.507)), url("../img/portada.jpg");
     width: 100%;
     height: 700px;
@@ -35,7 +36,7 @@ main {
     background-size: cover;
     background-attachment: fixed;
     flex-direction: column; }
-    main .Hero h1 {
+    main .hero h1 {
       font-size: 65px;
       color: #f1faee;
       padding-bottom: 25px;
@@ -48,63 +49,66 @@ main {
     transform: scale(1.1); }
   100% {
     transform: scale(1); } }
-    main .Hero p {
+    main .hero p {
       font-size: 30px;
       color: white;
-      font-weight: 600; }
-  main .Bucitos h3 {
+      font-weight: 600;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px; }
+  main .bucitos h3 {
     font-style: italic;
     font-weight: 800;
     font-size: 30px;
     color: #f1faee;
     background-color: black;
     padding-bottom: 22px; }
-  main .Bucitos .CompraBuzos {
+  main .bucitos .compra-buzos {
     display: flex;
     justify-content: space-evenly;
     margin: 30px; }
-    main .Bucitos .CompraBuzos .Productos {
+    main .bucitos .compra-buzos .productos {
       width: 250px;
       height: 350px;
       border: 2px white solid;
       -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
       -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
       box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
-      main .Bucitos .CompraBuzos .Productos img {
+      main .bucitos .compra-buzos .productos img {
         width: 100%;
         height: 270px; }
-      main .Bucitos .CompraBuzos .Productos h4 {
+      main .bucitos .compra-buzos .productos h4 {
         font-style: italic;
         font-size: 25px;
         color: aliceblue; }
-      main .Bucitos .CompraBuzos .Productos a {
+      main .bucitos .compra-buzos .productos a {
         background-color: black;
         color: white;
         text-decoration: none;
         padding: 3px; }
-        main .Bucitos .CompraBuzos .Productos a:hover {
+        main .bucitos .compra-buzos .productos a:hover {
           background-color: #a3a3a3;
           transition: 2s; }
-  main .MasSobreNosotros img {
+  main .mas-sobre-nosotros img {
     width: 500px;
     height: 600px;
     margin: 40px;
     -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
     box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
-  main .MasSobreNosotros div h2 {
+  main .mas-sobre-nosotros div h2 {
     font-weight: 600;
     font-style: oblique;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
     color: beige;
     border: white solid; }
-  main .MasSobreNosotros div p {
+  main .mas-sobre-nosotros div p {
     font-style: oblique;
     font-weight: 600;
     font-size: 20px;
     color: whitesmoke; }
-  main .GaleriaModelos {
+  main .galeria-modelos {
     background-color: white;
     margin-top: 100px;
     display: grid;
@@ -112,9 +116,9 @@ main {
     grid-auto-rows: 250px;
     gap: 15px;
     padding-bottom: 60px; }
-    main .GaleriaModelos .GridItem {
+    main .galeria-modelos .grid-item {
       position: relative; }
-      main .GaleriaModelos .GridItem img {
+      main .galeria-modelos .grid-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -122,47 +126,47 @@ main {
         -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
         -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
         box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
-      main .GaleriaModelos .GridItem h3 {
+      main .galeria-modelos .grid-item h3 {
         position: absolute;
         bottom: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         text-align: center;
         font-size: 30px; }
-    main .GaleriaModelos .img-4 {
+    main .galeria-modelos .img-4 {
       grid-row: span 2; }
-    main .GaleriaModelos .img-5 {
+    main .galeria-modelos .img-5 {
       grid-row: span 2; }
-    main .GaleriaModelos .img-6 {
+    main .galeria-modelos .img-6 {
       grid-row: span 2; }
-  main .Contacto {
-    color: #f1faee;
-    background-color: black;
-    padding-bottom: 5px;
-    font-style: italic;
-    font-weight: 800;
-    font-size: 30px; }
-  main .ContenedorDeContacto label {
-    color: white; }
-  main .ContenedorDeContacto h2 {
-    color: #f1faee; }
-  main .ContenedorDeContacto h3 {
-    color: #f1faee; }
-  main .ContenedorDeContacto .Rellenar {
-    text-align: center;
+  main form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 10px; }
+  main label {
     margin-top: 10px;
-    padding-bottom: 20px; }
-  main .ContenedorDeContacto .GeneroYComentarios h2 {
-    background-color: rgba(0, 0, 0, 0.527); }
-  main .ContenedorDeContacto .GeneroYComentarios .Genero {
-    text-align: center;
-    padding-bottom: 20px; }
-  main .ContenedorDeContacto .GeneroYComentarios .Comentario {
-    text-align: center;
-    padding-bottom: 50px; }
-    main .ContenedorDeContacto .GeneroYComentarios .Comentario h3 {
-      background-color: rgba(0, 0, 0, 0.527); }
-  main .TituloPrincipal h1 {
+    color: #f1faee; }
+  main input[type="text"],
+  main input[type="password"],
+  main input[type="email"],
+  main textarea {
+    margin-top: 5px;
+    padding: 5px; }
+  main input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer; }
+  main input[type="submit"]:hover {
+    background-color: rgba(160, 159, 159, 0.459); }
+  main input[type="radio"] {
+    margin-right: 5px; }
+  main .titulo-principal h1 {
     color: #f1faee;
     display: flex;
     justify-content: center;
@@ -172,16 +176,16 @@ main {
     font-style: italic;
     font-weight: 800;
     font-size: 30px; }
-  main .NoDeliveri {
+  main .no-deliveri {
     text-align: center; }
-    main .NoDeliveri p {
+    main .no-deliveri p {
       font-style: oblique;
       font-weight: 600;
       font-size: 20px;
       color: whitesmoke;
       list-style: armenian;
       text-align: center; }
-  main .Modelos h1 {
+  main .modelos h1 {
     color: #f1faee;
     display: flex;
     justify-content: center;
@@ -191,32 +195,32 @@ main {
     font-style: italic;
     font-weight: 800;
     font-size: 30px; }
-  main .Clientes .ContenedorCliente img {
+  main .clientes .contenedor-cliente img {
     width: 500px;
     height: 600px;
     margin: 40px;
     -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
     box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
-  main .Clientes .ContenedorCliente p {
+  main .clientes .contenedor-cliente p {
     font-style: oblique;
     font-weight: 600;
     font-size: 20px;
     color: whitesmoke;
     list-style: armenian; }
-  main .AcercaDe h1 {
+  main .acerca-de h1 {
     color: #f1faee;
     background-color: black;
     padding-bottom: 5px;
     font-style: italic;
     font-weight: 800;
     font-size: 30px; }
-  main .Ubicacion {
+  main .ubicacion {
     text-align: center;
     padding-bottom: 20px; }
-    main .Ubicacion h2 {
+    main .ubicacion h2 {
       color: #f1faee; }
-    main .Ubicacion p {
+    main .ubicacion p {
       font-style: oblique;
       font-weight: 600;
       font-size: 20px;
@@ -235,7 +239,7 @@ footer {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.568);
     color: black; }
-  footer .Redes {
+  footer .redes {
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -254,116 +258,116 @@ footer {
     padding-bottom: 15px; }
 
 @media screen and (max-width: 948px) {
-  .GaleriaModelos {
+  .galeria-modelos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 150px;
     gap: 15px; } }
 
 @media screen and (max-width: 1095px) {
-  main .Hero p {
+  main .hero p {
     font-size: 23px; }
-  main .Hero h1 {
+  main .hero h1 {
     font-size: 40px; }
-  main .Bucitos .CompraBuzos {
+  main .bucitos .compra-buzos {
     margin: 20px; }
-    main .Bucitos .CompraBuzos .Productos {
+    main .bucitos .compra-buzos .productos {
       width: 200px;
       height: 300px;
       border: 2px white solid; }
-      main .Bucitos .CompraBuzos .Productos img {
+      main .bucitos .compra-buzos .productos img {
         width: 100%;
         height: 210px; }
-      main .Bucitos .CompraBuzos .Productos h4 {
+      main .bucitos .compra-buzos .productos h4 {
         font-size: 17px; }
-  main .MasSobreNosotros img {
+  main .mas-sobre-nosotros img {
     width: 450px;
     height: 550px;
     margin: 35px; }
-  main .MasSobreNosotros div h2 {
+  main .mas-sobre-nosotros div h2 {
     font-weight: 550;
     font-size: 20px; }
-  main .MasSobreNosotros div p {
+  main .mas-sobre-nosotros div p {
     font-weight: 550;
     font-size: 10px; }
-  main .GaleriaModelos {
+  main .galeria-modelos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 150px;
     gap: 15px; } }
 
 @media screen and (max-width: 847px) {
-  main .Hero p {
+  main .hero p {
     font-size: 15px; }
-  main .Bucitos .CompraBuzos {
+  main .bucitos .compra-buzos {
     margin: 10px; }
-    main .Bucitos .CompraBuzos .Productos {
+    main .bucitos .compra-buzos .productos {
       width: 170px;
       height: 270px;
       border: 2px white solid; }
-      main .Bucitos .CompraBuzos .Productos img {
+      main .bucitos .compra-buzos .productos img {
         width: 100%;
         height: 170px; }
-      main .Bucitos .CompraBuzos .Productos h4 {
+      main .bucitos .compra-buzos .productos h4 {
         font-size: 17px; }
-  main .MasSobreNosotros img {
+  main .mas-sobre-nosotros img {
     width: 420px;
     height: 520px;
     margin: 30px; }
-  main .MasSobreNosotros div h2 {
+  main .mas-sobre-nosotros div h2 {
     font-weight: 520;
     font-size: 20px; }
-  main .MasSobreNosotros div p {
+  main .mas-sobre-nosotros div p {
     font-weight: 520;
     font-size: 10px; }
-  main .GaleriaModelos {
+  main .galeria-modelos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 100px;
     gap: 15px; }
-  main .GridItem h3 {
+  main .grid-item h3 {
     bottom: 0;
     width: 100%;
     font-size: 20px; }
-  main .Clientes .ContenedorCliente {
+  main .clientes .contenedor-cliente {
     display: flex;
     flex-wrap: wrap; }
-    main .Clientes .ContenedorCliente img {
+    main .clientes .contenedor-cliente img {
       width: 300px;
       height: 400px; }
-    main .Clientes .ContenedorCliente p {
+    main .clientes .contenedor-cliente p {
       font-size: 15px;
       text-align: center; } }
 
 @media screen and (max-width: 717px) {
-  main .Bucitos .CompraBuzos {
+  main .bucitos .compra-buzos {
     margin: 20px;
     display: flex;
     flex-wrap: wrap; }
-    main .Bucitos .CompraBuzos .Productos {
+    main .bucitos .compra-buzos .productos {
       width: 150px;
       height: 260px;
       border: 2px white solid; }
-      main .Bucitos .CompraBuzos .Productos img {
+      main .bucitos .compra-buzos .productos img {
         width: 100%;
         height: 150px; }
-      main .Bucitos .CompraBuzos .Productos h4 {
+      main .bucitos .compra-buzos .productos h4 {
         font-size: 15px; }
-  main .MasSobreNosotros img {
+  main .mas-sobre-nosotros img {
     width: 200px;
     height: 300px;
     margin-top: 40px; }
-  main .MasSobreNosotros div h2 {
+  main .mas-sobre-nosotros div h2 {
     font-weight: 400;
     font-size: 12px; }
-  main .MasSobreNosotros div p {
+  main .mas-sobre-nosotros div p {
     font-weight: 520;
     font-size: 10px; }
-  main .GaleriaModelos .GridItem h3 {
+  main .galeria-modelos .grid-item h3 {
     bottom: 0;
     width: 100%;
     font-size: 15px; } }
 
 @media screen and (max-width: 619px) {
-  main .Hero h1 {
-    font-size: 30px; } }
+  main .hero h1 {
+    font-size: 20px; } }

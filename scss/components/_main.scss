@@ -1,6 +1,6 @@
 main{
     background-color:$color-principal;
-    .Hero{
+    .hero{
         background:linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.507)), url("../img/portada.jpg");
         width: 100%;
         height: 700px;
@@ -25,9 +25,12 @@ main{
             font-size: 30px;
             color:nth($colores, 1);
             font-weight: 600;
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
         }
     }
-    .Bucitos{
+    .bucitos{
         h3{
             font-style: italic;
             font-weight: 800;
@@ -37,11 +40,11 @@ main{
             background-color:nth($colores, 2);
             padding-bottom: 22px;
         }
-        .CompraBuzos{
+        .compra-buzos{
             display: flex;
             justify-content: space-evenly;
             margin: 30px;
-            .Productos{
+            .productos{
                 width: 250px;
                 height: 350px;
                 border: 2px white solid;
@@ -72,7 +75,7 @@ main{
             }
         }
     }
-    .MasSobreNosotros{
+    .mas-sobre-nosotros{
         @extend %Flex;
         img{
             width: 500px;
@@ -100,7 +103,7 @@ main{
             }
         }
     }
-    .GaleriaModelos{
+    .galeria-modelos{
         background-color: nth($colores, 1);
         margin-top: 100px;
         display: grid;
@@ -108,7 +111,7 @@ main{
         grid-auto-rows: 250px;
         gap: 15px;
         padding-bottom: 60px;
-        .GridItem{
+        .grid-item{
             position: relative;
             img{
                 width: 100%;
@@ -142,53 +145,44 @@ main{
 
 //*----contacto-----*//
 
-    .Contacto{
-        color:$color-secundario;
-        @extend %Flex;
-        background-color: nth($colores, 2);
-        padding-bottom: 5px;
-        font-style: italic;
-        font-weight: 800;
-        font-size: 30px;
-    }
-    .ContenedorDeContacto{
-        label{
-            color: nth($colores, 1);
-        }
-        h2{
-            color: $color-secundario;
-        }
-        h3{
-            color: $color-secundario;
-        }
-        .Rellenar{
-            text-align: center;
-            margin-top: 10px;
-            padding-bottom: 20px;
-        }
-        .GeneroYComentarios{
-            h2{
-                @extend %Flex;
-                background-color: rgba(0, 0, 0, 0.527);
-            }
-            .Genero{
-                text-align: center;
-                padding-bottom: 20px;
-            }
-            .Comentario{
-                text-align: center;
-                padding-bottom: 50px;
-                h3{
-                    @extend %Flex;
-                    background-color: rgba(0, 0, 0, 0.527);
-                }
-            }
-        }
-    }
+form {
+display: flex;
+flex-direction: column;
+width: 300px;
+margin: 0 auto;
+padding-bottom: 30px;
+padding-top: 10px;
+}
+label {
+margin-top: 10px;
+color:$color-secundario;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+margin-top: 5px;
+padding: 5px;
+}
+input[type="submit"] {
+margin-top: 10px;
+padding: 10px;
+background-color: black;
+color: white;
+border: none;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background-color: rgba(160, 159, 159, 0.459);
+}
+/* Estilos para los radio buttons */
+input[type="radio"] {
+margin-right: 5px;
+}
 
 //*-----servicios-----*//
 
-    .TituloPrincipal{
+    .titulo-principal{
         h1{
             color: $color-secundario;
             @include flex (flex, center, center);
@@ -199,7 +193,7 @@ main{
             font-size: 30px;
         }
     }
-    .NoDeliveri{
+    .no-deliveri{
         text-align: center;
         p{
             font-style: oblique;
@@ -213,7 +207,7 @@ main{
 
 //*-----productos-----*//
 
-    .Modelos{
+    .modelos{
         h1{
             color: $color-secundario;
             @include flex (flex, center, center);
@@ -224,8 +218,8 @@ main{
             font-size: 30px;
         }
     }
-    .Clientes{
-        .ContenedorCliente{
+    .clientes{
+        .contenedor-cliente{
             @extend %Flex;
             img{
                 width: 500px;
@@ -247,7 +241,7 @@ main{
 
 //*----acerca de nosotros-----*//
 
-    .AcercaDe{
+    .acerca-de{
         h1{
             color: $color-secundario;
             @extend %Flex;
@@ -258,7 +252,7 @@ main{
             font-size: 30px;
         }
     }
-    .Ubicacion{
+    .ubicacion{
         text-align: center;
         padding-bottom: 20px;
         h2{

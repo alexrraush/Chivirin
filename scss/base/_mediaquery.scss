@@ -1,5 +1,5 @@
 @media screen and (max-width:948px){
-    .GaleriaModelos{
+    .galeria-modelos{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-auto-rows: 150px;
@@ -8,16 +8,16 @@
 }
 
 @media screen and (max-width:1095px){
-    main .Hero p{
+    main .hero p{
         font-size: 23px;
     }
-    main .Hero h1{
+    main .hero h1{
         font-size: 40px;
     }
-    main .Bucitos{
-        .CompraBuzos{
+    main .bucitos{
+        .compra-buzos{
             margin: 20px;
-            .Productos{
+            .productos{
                 width: 200px;
                 height: 300px;
                 border: 2px white solid;
@@ -31,12 +31,12 @@
             }
         }
     }
-    main .MasSobreNosotros img{
+    main .mas-sobre-nosotros img{
         width: 450px;
         height: 550px;
         margin: 35px;
     }
-    main .MasSobreNosotros div{
+    main .mas-sobre-nosotros div{
         h2{
             font-weight: 550;
             font-size: 20px;
@@ -46,7 +46,7 @@
             font-size:10px ;
         }
     }
-    main .GaleriaModelos{
+    main .galeria-modelos{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-auto-rows: 150px;
@@ -55,13 +55,13 @@
 }
 
 @media screen and (max-width:847px){
-    main .Hero p{
+    main .hero p{
         font-size: 15px;
     }
-    main .Bucitos{
-        .CompraBuzos{
+    main .bucitos{
+        .compra-buzos{
             margin: 10px;
-            .Productos{
+            .productos{
                 width: 170px;
                 height: 270px;
                 border: 2px white solid;
@@ -75,12 +75,12 @@
             }
         }
     }
-    main .MasSobreNosotros img{
+    main .mas-sobre-nosotros img{
         width: 420px;
         height: 520px;
         margin: 30px;
     }
-    main .MasSobreNosotros div{
+    main .mas-sobre-nosotros div{
         h2{
             font-weight: 520;
             font-size: 20px;
@@ -90,19 +90,19 @@
             font-size:10px ;
         }
     }
-    main .GaleriaModelos{
+    main .galeria-modelos{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-auto-rows: 100px;
         gap: 15px;
     }
-    main .GridItem h3{
+    main .grid-item h3{
         bottom: 0;
         width: 100%;
         font-size: 20px;
     }
-    main .Clientes{
-        .ContenedorCliente{
+    main .clientes{
+        .contenedor-cliente{
             display: flex;
             flex-wrap: wrap;
             img{
@@ -118,12 +118,12 @@
 }
 
 @media screen and (max-width:717px){
-    main .Bucitos{
-        .CompraBuzos{
+    main .bucitos{
+        .compra-buzos{
             margin: 20px;
             display: flex;
             flex-wrap: wrap;
-            .Productos{
+            .productos{
                 width: 150px;
                 height: 260px;
                 border: 2px white solid;
@@ -137,12 +137,12 @@
             }
         }
     }
-    main .MasSobreNosotros img{
+    main .mas-sobre-nosotros img{
         width: 200px;
         height: 300px;
         margin-top: 40px;
     }
-    main .MasSobreNosotros div{
+    main .mas-sobre-nosotros div{
         h2{
             font-weight: 400;
             font-size: 12px;
@@ -152,8 +152,8 @@
             font-size:10px ;
         }
     }
-    main .GaleriaModelos{
-        .GridItem{
+    main .galeria-modelos{
+        .grid-item{
             h3{
                 bottom: 0;
                 width: 100%;
@@ -164,7 +164,7 @@
 }
 
 @media screen and (max-width:619px){
-    main .Hero h1{
-        font-size: 30px;
+    main .hero h1{
+        font-size: 20px;
     }
 }

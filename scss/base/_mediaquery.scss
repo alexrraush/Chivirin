@@ -75,6 +75,10 @@
             }
         }
     }
+    main .mas-sobre-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
     main .mas-sobre-nosotros img{
         width: 420px;
         height: 520px;
@@ -138,8 +142,8 @@
         }
     }
     main .mas-sobre-nosotros img{
-        width: 200px;
-        height: 300px;
+        width: 300px;
+        height: 400px;
         margin-top: 40px;
     }
     main .mas-sobre-nosotros div{
@@ -150,6 +154,7 @@
         p{
             font-weight: 520;
             font-size:10px ;
+            text-align: center;
         }
     }
     main .galeria-modelos{
@@ -165,6 +170,12 @@
 
 @media screen and (max-width:619px){
     main .hero h1{
+        font-size: 20px;
+    }
+    footer section p{
+        font-size: 15px;
+    }
+    footer section div h3{
         font-size: 20px;
     }
 }

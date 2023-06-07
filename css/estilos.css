@@ -73,7 +73,8 @@ main {
       border: 2px white solid;
       -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
       -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
-      box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+      box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+      transition: all 0.3s ease; }
       main .bucitos .compra-buzos .productos img {
         width: 100%;
         height: 270px; }
@@ -89,13 +90,16 @@ main {
         main .bucitos .compra-buzos .productos a:hover {
           background-color: #a3a3a3;
           transition: 2s; }
+    main .bucitos .compra-buzos .productos:hover {
+      transform: scale(1.2); }
   main .mas-sobre-nosotros img {
     width: 500px;
     height: 600px;
     margin: 40px;
     -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
-    box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+    box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+    transition: transform 0.3s ease; }
   main .mas-sobre-nosotros div h2 {
     font-weight: 600;
     font-style: oblique;
@@ -107,7 +111,10 @@ main {
     font-style: oblique;
     font-weight: 600;
     font-size: 20px;
-    color: whitesmoke; }
+    color: whitesmoke;
+    justify-content: center; }
+  main .mas-sobre-nosotros img:hover {
+    transform: scale(1.1); }
   main .galeria-modelos {
     background-color: white;
     margin-top: 100px;
@@ -184,7 +191,9 @@ main {
       font-size: 20px;
       color: whitesmoke;
       list-style: armenian;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 100px;
+      padding-top: 100px; }
   main .modelos h1 {
     color: #f1faee;
     display: flex;
@@ -201,13 +210,16 @@ main {
     margin: 40px;
     -webkit-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
-    box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67); }
+    box-shadow: 9px 7px 7px 3px rgba(0, 0, 0, 0.67);
+    transition: transform 0.3s ease; }
   main .clientes .contenedor-cliente p {
     font-style: oblique;
     font-weight: 600;
     font-size: 20px;
     color: whitesmoke;
     list-style: armenian; }
+  main .clientes .contenedor-cliente img:hover {
+    transform: scale(1.1); }
   main .acerca-de h1 {
     color: #f1faee;
     background-color: black;
@@ -248,7 +260,8 @@ footer {
     justify-content: center;
     font-style: italic;
     font-weight: 400;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
   footer section div h3 {
     font-style: italic;
     font-weight: 700;
@@ -310,6 +323,9 @@ footer {
         height: 170px; }
       main .bucitos .compra-buzos .productos h4 {
         font-size: 17px; }
+  main .mas-sobre-nosotros {
+    display: flex;
+    flex-direction: column; }
   main .mas-sobre-nosotros img {
     width: 420px;
     height: 520px;
@@ -354,15 +370,16 @@ footer {
       main .bucitos .compra-buzos .productos h4 {
         font-size: 15px; }
   main .mas-sobre-nosotros img {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     margin-top: 40px; }
   main .mas-sobre-nosotros div h2 {
     font-weight: 400;
     font-size: 12px; }
   main .mas-sobre-nosotros div p {
     font-weight: 520;
-    font-size: 10px; }
+    font-size: 10px;
+    text-align: center; }
   main .galeria-modelos .grid-item h3 {
     bottom: 0;
     width: 100%;
@@ -370,4 +387,8 @@ footer {
 
 @media screen and (max-width: 619px) {
   main .hero h1 {
+    font-size: 20px; }
+  footer section p {
+    font-size: 15px; }
+  footer section div h3 {
     font-size: 20px; } }
